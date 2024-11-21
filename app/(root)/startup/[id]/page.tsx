@@ -87,7 +87,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
           <div className="max-w-4xl mx-auto ">
             <p className="text-30-semibold">Editor Picks</p>
             <ul className="mt-7 card_grid-sm">
-              {editorPosts.map((post: startupCardType, index: number) => (
+              {editorPosts.map((post: startupCardType) => (
                 <StartupCard key={post._id} post={post} />
               ))}
             </ul>
